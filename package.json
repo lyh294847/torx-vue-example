@@ -13,13 +13,12 @@
   "description": "",
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
-    "@form-create/element-ui": "^3.2.15",
     "dayjs": "^1.11.13",
     "element-plus": "^2.9.1",
     "pinia": "^2.2.6",
+    "torx-vue": "file:../torx-vue",
     "vue": "^3.5.13",
-    "vue-router": "^4.4.5",
-    "torx-vue": "file:../torx-vue"
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
