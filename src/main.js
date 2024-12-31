@@ -4,12 +4,13 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import App from './App.vue'
-// import router from './router'
-
 const app = createApp(App)
-
 app.use(createPinia())
-// app.use(router)
+
+import { routerUtil } from 'torx-vue'
+import { routes } from './route/route'
+const router = routerUtil.buildRouter(routes)
+app.use(router)
 
 // 引入element-ui
 import ElementPlus from 'element-plus'
