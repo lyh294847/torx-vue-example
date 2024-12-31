@@ -1,5 +1,5 @@
 import {
-  BasicLayoutComponent, UserManagementComponent, RoleManagementComponent
+  BasicLayoutComponent, LoginComponent, UserManagementComponent, RoleManagementComponent
   , ResourceManagementComponent, ParameterManagementComponent
 } from 'torx-vue'
 import { Document, Location, Setting } from '@element-plus/icons-vue'
@@ -21,6 +21,14 @@ export const routes = [
         }
       },
     ],
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: LoginComponent,
+    meta: {
+      hidden: true,
+    }
   },
   {
     path: '/system',
@@ -96,6 +104,9 @@ export const routes = [
   {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
-    component: () => import('@/views/404.vue')
+    component: () => import('@/views/404.vue'),
+    meta: {
+      hidden: true,
+    }
   }
 ]

@@ -7,6 +7,7 @@ import App from './App.vue'
 const app = createApp(App)
 app.use(createPinia())
 
+import 'torx-vue/dist/index.css'
 import { routerUtil } from 'torx-vue'
 import { routes } from './route/route'
 const router = routerUtil.buildRouter(routes)
@@ -19,5 +20,6 @@ import 'element-plus/dist/index.css'
 app.use(ElementPlus, { locale: zhCn });
 
 // import './interceptor'
+
 
 app.mount('#app')

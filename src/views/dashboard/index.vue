@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h1>Dashboard</h1>
+        <el-button type="primary">Primary Button</el-button>
     </div>
 </template>
