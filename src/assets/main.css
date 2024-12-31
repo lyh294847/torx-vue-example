@@ -1,0 +1,9 @@
+@import './base.css';
+
+#app {
+  /* max-width: 1280px; 删除这行 */
+  /* 或者设置更大的值 */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
